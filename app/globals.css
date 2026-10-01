@@ -1,26 +1,48 @@
+/* app/globals.css */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html {
+  scroll-behavior: smooth;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@theme {
+  /* ─────────────────────────────────────────────
+     Primary — deep coastal green
+     Base: rgb(39, 121, 93) → brand-600
+     ───────────────────────────────────────────── */
+  --color-brand-50: #f0f9f5;
+  --color-brand-100: #d9f0e5;
+  --color-brand-200: #b5e0cc;
+  --color-brand-300: #85c9ad;
+  --color-brand-400: #55ad8b;
+  --color-brand-500: #369070;
+  --color-brand-600: #27795d; /* ← your colour */
+  --color-brand-700: #1f6149;
+  --color-brand-800: #1a4d3b;
+  --color-brand-900: #143d2f;
+  --color-brand-950: #0a2119;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  /* ─────────────────────────────────────────────
+     Neutrals — warm sand / cream
+     Pairs beautifully with deep green, keeps
+     the brand feeling organic rather than clinical.
+     ───────────────────────────────────────────── */
+  --color-sand-50: #faf8f3;
+  --color-sand-100: #f3ede1;
+  --color-sand-200: #e6dac2;
+  --color-sand-300: #d4c096;
+  --color-sand-400: #bfa06c;
+  --color-sand-500: #a8854f;
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* ─────────────────────────────────────────────
+     Accent — muted gold (optional, for small touches:
+     eyebrows, dividers, badges, hover states)
+     ───────────────────────────────────────────── */
+  --color-accent-300: #e8c98a;
+  --color-accent-400: #d4a94e;
+  --color-accent-500: #b98c2e;
+  --color-accent-600: #946d1f;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-playfair), ui-serif, Georgia, serif;
 }
