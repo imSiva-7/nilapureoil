@@ -9,7 +9,7 @@ export function Footer() {
     <footer className="border-t border-accent-400/20 bg-brand-950 text-white/80">
       <Container className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div className="lg:col-span-2">
-          <Link href="/" aria-label="Nila home" className="inline-flex">
+          <Link href="/" aria-label="Nila Pure Oils home" className="inline-flex">
             <BrandLogo light />
           </Link>
           <p className="mt-4 max-w-sm text-sm leading-relaxed">{site.description}</p>

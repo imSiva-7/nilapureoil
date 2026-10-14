@@ -1,9 +1,9 @@
 // lib/site.ts
 export const site = {
-  name: "Nila",
+  name: "Nila Pure Oils",
   tagline: "Pure oils, crafted by tradition",
   description:
-    "Nila is a traditional oil company crafting pure groundnut oil, ghee, jaggery and more. Explore our range and get in touch.",
+    "Nila Pure Oils is a traditional oil company crafting pure groundnut oil, ghee, jaggery and more. Explore our range and get in touch.",
   email: "hello@nilapureoils.com",
   phone: "8072318336",
   // whatsApp: "9840129860"

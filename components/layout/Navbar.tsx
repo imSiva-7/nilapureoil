@@ -37,7 +37,7 @@ export function Navbar() {
       )}
     >
       <Container className="flex h-16 items-center justify-between sm:h-20">
-        <Link href="/" aria-label="Nila home" className="inline-flex items-center">
+        <Link href="/" aria-label="Nila Pure Oils home" className="inline-flex items-center">
           <BrandLogo />
         </Link>
 
