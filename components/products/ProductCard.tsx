@@ -18,11 +18,11 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="group flex flex-col overflow-hidden rounded-3xl border border-brand-900/10 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-900/5"
+      className="group flex flex-col overflow-hidden rounded-3xl border border-accent-500/30 bg-brand-900 transition duration-300 hover:-translate-y-1 hover:border-accent-400/60 hover:shadow-xl hover:shadow-brand-900/10"
     >
       <Link
         href={`/products/${product.slug}`}
-        className="relative block aspect-[4/3] overflow-hidden bg-brand-50"
+        className="relative block aspect-square overflow-hidden bg-white"
       >
         <Image
           src={product.image}
@@ -34,17 +34,17 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
       </Link>
 
       <div className="flex flex-1 flex-col p-6">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-600">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-400">
           {product.category}
         </p>
-        <h3 className="mt-2.5 font-display text-xl text-brand-950">
+        <h3 className="mt-2.5 font-display text-xl text-white">
           <Link href={`/products/${product.slug}`}>{product.name}</Link>
         </h3>
-        <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">{product.tagline}</p>
+        <p className="mt-2 flex-1 text-sm leading-relaxed text-white/85">{product.tagline}</p>
 
         <Link
           href={`/products/${product.slug}`}
-          className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-brand-700 transition group-hover:gap-2.5 hover:text-brand-900"
+          className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-white transition group-hover:gap-2.5 hover:text-accent-300"
         >
           View details
           <ArrowRight className="h-4 w-4" />

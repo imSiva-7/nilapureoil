@@ -33,7 +33,7 @@ export function Values() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <Section className="bg-sand-50">
+    <Section className="bg-white">
       <div ref={ref}>
         <SectionHeading
           eyebrow="Why Nila"
@@ -49,17 +49,17 @@ export function Values() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="rounded-2xl border border-brand-900/8 bg-white p-7 transition hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-900/5"
+              className="rounded-2xl border border-accent-500/20 bg-white p-7 transition hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-900/5"
             >
               <motion.span 
-                className="grid h-11 w-11 place-items-center rounded-full bg-brand-50 text-brand-700"
+                className="grid h-11 w-11 place-items-center rounded-full bg-white text-brand-900"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 transition={{ type: "spring", stiffness: 400 }}
               >
                 <Icon className="h-5 w-5" />
               </motion.span>
-              <h3 className="mt-6 font-display text-xl text-brand-950">{title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-slate-600">{description}</p>
+              <h3 className="mt-6 font-display text-xl text-brand-900">{title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-brand-900">{description}</p>
             </motion.article>
           ))}
         </div>

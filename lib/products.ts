@@ -18,7 +18,7 @@ export const products: Product[] = [
     tagline: "Our signature oil — aromatic, pure, rich in flavor.",
     description:
       "The oil that started it all. We cold-press premium groundnuts to extract pure, unrefined oil that retains its natural aroma and nutrients. No heat, no chemicals — just the way it should be.",
-    image: "/images/products/groundnut-oil.jpg",
+    image: "/images/products/groundnut-oil.webp",
     highlights: [
       { title: "Flavor profile", description: "Rich nutty aroma, naturally sweet, perfect for authentic Indian cooking." },
       { title: "Best for", description: "Frying, tempering, and traditional South Indian recipes." },
@@ -38,7 +38,7 @@ export const products: Product[] = [
     tagline: "Pure coconut oil — traditional extraction, natural goodness.",
     description:
       "Extracted from fresh coconuts using traditional cold-pressing methods. Rich in natural nutrients and perfect for cooking, hair care, and skin care. Pure, natural, and chemical-free.",
-    image: "/images/products/coconut-oil.jpg",
+    image: "/images/products/coconut-oil.webp",
     highlights: [
       { title: "Flavor profile", description: "Natural coconut aroma, light and versatile." },
       { title: "Best for", description: "Cooking, hair care, skin care, and traditional remedies." },
@@ -58,7 +58,7 @@ export const products: Product[] = [
     tagline: "Premium sesame oil — rich, aromatic, and nutritious.",
     description:
       "Also known as sesame oil, our gingelly oil is cold-pressed from carefully selected sesame seeds. Rich in antioxidants and essential nutrients, perfect for traditional South Indian cooking and Ayurvedic applications.",
-    image: "/images/products/gingelly-oil.jpg",
+    image: "/images/products/gingelly-oil.webp",
     highlights: [
       { title: "Flavor profile", description: "Nutty, aromatic with a distinctive sesame flavor." },
       { title: "Best for", description: "Tempering, massages, and traditional cooking." },
@@ -78,7 +78,7 @@ export const products: Product[] = [
     tagline: "Traditional lamp oil — pure castor oil for rituals and wellness.",
     description:
       "Pure castor oil, traditionally used in lamps and for therapeutic purposes. Cold-pressed from premium castor seeds, this versatile oil is essential for traditional rituals, hair care, and natural remedies.",
-    image: "/images/products/velakku-oil.jpg",
+    image: "/images/products/velakku-oil.webp",
     highlights: [
       { title: "Uses", description: "Traditional lamps, hair growth, skin care." },
       { title: "Best for", description: "Religious rituals, Ayurvedic treatments, hair care." },
@@ -98,7 +98,7 @@ export const products: Product[] = [
     tagline: "Traditional ghee made from pure cow milk.",
     description:
       "Crafted using the traditional bilona method from 100% pure cow milk. Slow-churned butter is gently heated to create golden, aromatic ghee rich in nutrients and flavor. The way our grandparents made it.",
-    image: "/images/products/ghee.jpg",
+    image: "/images/products/ghee.webp",
     highlights: [
       { title: "Flavor profile", description: "Golden, nutty, aromatic with a rich traditional taste." },
       { title: "Best for", description: "Cooking, drizzling over rice and rotis, and Ayurvedic wellness." },
@@ -118,7 +118,7 @@ export const products: Product[] = [
     tagline: "Traditional jaggery — unrefined sweetness from pure sugarcane.",
     description:
       "Made from concentrated sugarcane juice with no added chemicals or refinement. Rich in iron and minerals, this traditional sweetener brings depth and warmth to any dish or beverage. Pure, natural, and authentic.",
-    image: "/images/products/jaggery.jpg",
+    image: "/images/products/jaggery.webp",
     highlights: [
       { title: "Flavor profile", description: "Deep caramel notes, earthy sweetness, mineral-rich." },
       { title: "Best for", description: "Traditional sweets, chai, desserts, and health tonics." },

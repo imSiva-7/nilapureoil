@@ -19,10 +19,10 @@ export function SectionHeading({
   return (
     <div className={cn("max-w-2xl", align === "center" && "mx-auto text-center", className)}>
       {eyebrow && (
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">{eyebrow}</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-900">{eyebrow}</p>
       )}
-      <h2 className="mt-3 font-display text-3xl leading-tight text-brand-950 sm:text-4xl">{title}</h2>
-      {description && <p className="mt-4 text-base leading-relaxed text-slate-600">{description}</p>}
+      <h2 className="mt-3 font-display text-3xl leading-tight text-brand-900 sm:text-4xl">{title}</h2>
+      {description && <p className="mt-4 text-base leading-relaxed text-brand-900">{description}</p>}
     </div>
   );
 }

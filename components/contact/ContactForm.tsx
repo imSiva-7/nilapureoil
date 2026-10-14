@@ -65,7 +65,7 @@ export function ContactForm() {
         </p>
       )}
 
-      <p className="text-xs text-slate-400">
+      <p className="text-xs text-brand-900">
         No online purchase here — this form simply opens your email client.
       </p>
     </form>

@@ -27,8 +27,8 @@ export default function ProductsPage() {
           ))}
         </div>
 
-        <div className="mt-12 rounded-2xl border border-brand-900/10 bg-sand-50 p-6 text-center">
-          <p className="text-sm text-slate-600">
+        <div className="mt-12 rounded-2xl border border-brand-900/10 bg-white p-6 text-center">
+          <p className="text-sm text-brand-900">
             <strong className="text-brand-900">Note:</strong> {priceDisclaimer}
           </p>
         </div>

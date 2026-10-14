@@ -21,10 +21,10 @@ export function StorySection() {
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="relative aspect-[5/4] overflow-hidden rounded-[2rem] bg-brand-50">
+          <div className="relative aspect-[3/2] overflow-hidden rounded-[2rem] bg-white">
             <Image
-              src="/images/story.jpg"
-              alt="The Nila oil pressing space"
+              src="/images/nila-product-range.webp"
+              alt="The complete Nila range: groundnut, coconut, gingelly and velakku oils, cow ghee, and naatu sakkarai"
               fill
               sizes="(min-width: 1024px) 45vw, 100vw"
               className="object-cover"
@@ -38,7 +38,7 @@ export function StorySection() {
             whileHover={{ scale: 1.05 }}
           >
             <p className="font-display text-3xl text-brand-900">100%</p>
-            <p className="mt-1 text-xs leading-relaxed text-slate-500">
+            <p className="mt-1 text-xs leading-relaxed text-brand-900">
               Pure, cold-pressed oils with no additives or chemicals.
             </p>
           </motion.div>
@@ -49,13 +49,13 @@ export function StorySection() {
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-600">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-900">
             Our story
           </p>
-          <h2 className="mt-3 font-display text-3xl leading-tight text-brand-950 sm:text-4xl">
+          <h2 className="mt-3 font-display text-3xl leading-tight text-brand-900 sm:text-4xl">
             It started with one drum and a rented corner.
           </h2>
-          <div className="mt-6 space-y-4 text-base leading-relaxed text-slate-600">
+          <div className="mt-6 space-y-4 text-base leading-relaxed text-brand-900">
             <p>
               Nila began in 2019 as a weekend experiment — a traditional oil press, a small
               warehouse near the harbour, and a stubborn belief that pure, cold-pressed oils deserved

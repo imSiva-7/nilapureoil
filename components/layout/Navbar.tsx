@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
+import { BrandLogo } from "@/components/ui/BrandLogo";
 import { Close, Menu } from "@/components/ui/Icons";
 import { navLinks, site } from "@/lib/site";
 import { cn } from "@/lib/utils";
@@ -32,13 +33,12 @@ export function Navbar() {
       transition={{ duration: 0.5 }}
       className={cn(
         "sticky top-0 z-50 border-b transition-colors duration-300",
-        scrolled ? "border-brand-900/10 bg-white/85 backdrop-blur-md" : "border-transparent bg-white"
+        scrolled ? "border-accent-500/20 bg-white backdrop-blur-md" : "border-accent-500/15 bg-white"
       )}
     >
       <Container className="flex h-16 items-center justify-between sm:h-20">
-        <Link href="/" className="flex items-baseline gap-1.5">
-          <span className="font-display text-2xl tracking-tight text-brand-950">Nila</span>
-          <span className="h-1.5 w-1.5 rounded-full bg-brand-500" />
+        <Link href="/" aria-label="Nila home" className="inline-flex items-center">
+          <BrandLogo />
         </Link>
 
         <nav className="hidden items-center gap-9 md:flex">
@@ -50,7 +50,7 @@ export function Navbar() {
                 href={link.href}
                 className={cn(
                   "text-sm transition-colors",
-                  active ? "text-brand-900" : "text-slate-500 hover:text-brand-900"
+                  active ? "text-brand-900" : "text-brand-900 hover:text-brand-900"
                 )}
               >
                 {link.label}
@@ -70,7 +70,7 @@ export function Navbar() {
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
-          className="grid h-10 w-10 place-items-center rounded-full text-brand-900 hover:bg-brand-50 md:hidden"
+          className="grid h-10 w-10 place-items-center rounded-full text-brand-900 hover:bg-brand-900/5 md:hidden"
         >
           {open ? <Close className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
@@ -83,7 +83,7 @@ export function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="border-t border-brand-900/10 bg-white md:hidden"
+            className="border-t border-accent-500/20 bg-white md:hidden"
           >
             <Container className="flex flex-col gap-1 py-4">
               {navLinks.map((link, index) => (
@@ -95,7 +95,7 @@ export function Navbar() {
                 >
                   <Link
                     href={link.href}
-                    className="block rounded-lg px-3 py-3 text-sm text-slate-600 hover:bg-brand-50 hover:text-brand-900"
+                    className="block rounded-lg px-3 py-3 text-sm text-brand-900 hover:bg-brand-900/5 hover:text-brand-900"
                   >
                     {link.label}
                   </Link>
@@ -110,7 +110,7 @@ export function Navbar() {
                   Get in touch
                 </ButtonLink>
               </motion.div>
-              <p className="mt-4 px-3 text-xs text-slate-400">{site.email}</p>
+              <p className="mt-4 px-3 text-xs text-brand-900">{site.email}</p>
             </Container>
           </motion.div>
         )}

@@ -9,11 +9,11 @@ type Variant = "primary" | "outline" | "ghost" | "light";
 type Size = "sm" | "md" | "lg";
 
 const variants: Record<Variant, string> = {
-  primary: "bg-brand-900 text-white hover:bg-brand-800",
+  primary: "border border-brand-900 bg-brand-900 text-white hover:bg-brand-900/90",
   outline:
-    "border border-brand-900/15 text-brand-900 hover:border-brand-900/40 hover:bg-brand-50",
-  ghost: "text-brand-900 hover:bg-brand-50",
-  light: "bg-white text-brand-950 hover:bg-sand-100",
+    "border border-brand-900 bg-brand-900 text-white hover:bg-brand-900/90",
+  ghost: "text-brand-900 hover:bg-brand-900/5",
+  light: "border border-white/40 bg-brand-900 text-white hover:bg-white/10",
 };
 
 const sizes: Record<Size, string> = {

@@ -29,8 +29,8 @@ export default function ContactPage() {
       <Section>
         <div className="grid gap-14 lg:grid-cols-[1fr_0.8fr] lg:gap-20">
           <div>
-            <h2 className="font-display text-2xl text-brand-950">Send us a message</h2>
-            <p className="mt-2 text-sm text-slate-500">
+            <h2 className="font-display text-2xl text-brand-900">Send us a message</h2>
+            <p className="mt-2 text-sm text-brand-900">
               Fill this in and we&apos;ll get back to you.
             </p>
             <div className="mt-8">
@@ -42,18 +42,18 @@ export default function ContactPage() {
             {details.map(({ icon: Icon, label, value, href }) => (
               <div
                 key={label}
-                className="rounded-2xl border border-brand-900/10 bg-sand-50 p-6"
+                className="rounded-2xl border border-brand-900/10 bg-white p-6"
               >
                 <span className="grid h-10 w-10 place-items-center rounded-full bg-white text-brand-700">
                   <Icon className="h-5 w-5" />
                 </span>
-                <p className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-brand-600">
+                <p className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-brand-900">
                   {label}
                 </p>
                 {href ? (
                   <a
                     href={href}
-                    className="mt-1.5 block text-sm text-brand-950 transition hover:text-brand-600"
+                    className="mt-1.5 block text-sm text-brand-950 transition hover:text-brand-900"
                   >
                     {value}
                   </a>
@@ -64,7 +64,7 @@ export default function ContactPage() {
             ))}
 
             <div className="rounded-2xl border border-brand-900/10 p-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-600">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-900">
                 Opening hours
               </p>
               <p className="mt-1.5 text-sm text-brand-950">{site.hours}</p>

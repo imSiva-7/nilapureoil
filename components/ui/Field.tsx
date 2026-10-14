@@ -3,7 +3,7 @@ import type { ComponentProps } from "react";
 import { cn } from "@/lib/utils";
 
 const control =
-  "w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 transition focus:border-brand-500 focus:outline-none focus:ring-4 focus:ring-brand-500/10";
+  "w-full rounded-xl border border-brand-900/20 bg-white px-4 py-3 text-sm text-brand-900 placeholder:text-brand-900 transition focus:border-brand-500 focus:outline-none focus:ring-4 focus:ring-brand-500/10";
 
 export function Label({ children, htmlFor }: { children: React.ReactNode; htmlFor: string }) {
   return (

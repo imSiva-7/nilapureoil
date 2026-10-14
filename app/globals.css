@@ -5,43 +5,44 @@ html {
   scroll-behavior: smooth;
 }
 
+@custom-variant hover (&:hover);
+
+
 @theme {
   /* ─────────────────────────────────────────────
-     Primary — deep coastal green
-     Base: rgb(39, 121, 93) → brand-600
+     Primary — navy from the Nila packaging
      ───────────────────────────────────────────── */
-  --color-brand-50: #f0f9f5;
-  --color-brand-100: #d9f0e5;
-  --color-brand-200: #b5e0cc;
-  --color-brand-300: #85c9ad;
-  --color-brand-400: #55ad8b;
-  --color-brand-500: #369070;
-  --color-brand-600: #27795d; /* ← your colour */
-  --color-brand-700: #1f6149;
-  --color-brand-800: #1a4d3b;
-  --color-brand-900: #143d2f;
-  --color-brand-950: #0a2119;
+  --color-brand-50: #182f40;
+  --color-brand-100: #182f40;
+  --color-brand-200: #182f40;
+  --color-brand-300: #182f40;
+  --color-brand-400: #182f40;
+  --color-brand-500: #182f40;
+  --color-brand-600: #182f40;
+  --color-brand-700: #182f40;
+  --color-brand-800: #182f40;
+  --color-brand-900: #182f40;
+  --color-brand-950: #182f40;
 
   /* ─────────────────────────────────────────────
-     Neutrals — warm sand / cream
-     Pairs beautifully with deep green, keeps
-     the brand feeling organic rather than clinical.
+     Neutral — white
+     Three base colors: white, Nila blue, and highlight gold
      ───────────────────────────────────────────── */
-  --color-sand-50: #faf8f3;
-  --color-sand-100: #f3ede1;
-  --color-sand-200: #e6dac2;
-  --color-sand-300: #d4c096;
-  --color-sand-400: #bfa06c;
-  --color-sand-500: #a8854f;
+  --color-sand-50: #ffffff;
+  --color-sand-100: #ffffff;
+  --color-sand-200: #ffffff;
+  --color-sand-300: #ffffff;
+  --color-sand-400: #ffffff;
+  --color-sand-500: #ffffff;
 
   /* ─────────────────────────────────────────────
-     Accent — muted gold (optional, for small touches:
-     eyebrows, dividers, badges, hover states)
+     Accent — gold caps and botanical label details
      ───────────────────────────────────────────── */
-  --color-accent-300: #e8c98a;
-  --color-accent-400: #d4a94e;
-  --color-accent-500: #b98c2e;
-  --color-accent-600: #946d1f;
+  --color-accent-300: #d8b572;
+  --color-accent-400: #d8b572;
+  --color-accent-500: #d8b572;
+  --color-accent-600: #d8b572;
+  --color-accent-700: #d8b572;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-playfair), ui-serif, Georgia, serif;
